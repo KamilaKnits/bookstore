@@ -1,0 +1,132 @@
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #110901;
+    display: flex;
+    justify-content: right;
+  }
+  
+  ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    background-color: #542b02;
+  }
+
+.main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+}
+
+.records-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("sales/images/bookstore.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.login-button {
+    width: 50%;
+    padding: 12px;
+    background-color: #5a2e02;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+} 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.chart-data {
+    max-width: 600px;
+    width: 100%
+}
+
+a {
+    text-decoration: none;
+    color:black 
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+.book-card img {
+    flex-shrink: 0;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+  
+.book-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.book-detail-container {
+    text-align: center;
+    margin-top: 15px;
+  }
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

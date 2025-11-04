@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Bookstore Home</title>
+    <script src="{% static 'sales/home.js' %}" defer></script>
+
+</head>
+<body>
+    <div><img src="{% static 'sales/images/books-unsplash.jpg' %}" alt="home" class="background-image"></div>
+    
+    <div class="main-content">
+        <h1>Welcome to our Bookstore</h1>
+        <a href="{%url 'login' %}">Login</a>
+
+    </div>
+    <footer>
+        Photo by <a
+            href="https://unsplash.com/@gulfergin_01?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Gülfer ERGİN</a> on
+        <a
+            href="https://unsplash.com/photos/white-and-brown-book-on-brown-woven-surface-LUGuCtvlk1Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </footer>
+</body>
+</html>
